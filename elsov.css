@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color:rgb(182, 128, 67);
+    color: #333;
+    display:block;
+    margin: auto;
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header header"
+        "nav main"
+        "footer footer";
+    height: 100vh;
+}
+
+header {
+    grid-area: header;
+    background-color: #e7e7e7;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    display: block;
+}
+
+nav {
+    grid-area: nav;
+    background-color:rgba(0, 128, 0, 0.747);
+    padding: 5px;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: relative;
+    background-color: #444;
+    top: 0;
+    left: 100%;
+    min-width: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.692);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+    opacity: 1;
+}
+
+main {
+    grid-area: main;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    background-color:red;
+    border-radius: 5px;
+    display:block;
+}
+.final{
+flex: 2;
+    padding: 20px;
+    background-color:azure;
+    border-radius: 5px;
+    display:block;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:whitesmoke;
+}
+
+
+.milano{
+    width: 400px;
+    height:200px;
+    
+}
+.porto{
+    width: 400px;
+    height:200px;
+    
+}
+.velenc{
+    width: 400px;
+    height:200px;
+    
+}
+.Ro{
+    width: 400px;
+    height:200px;
+}
+.piz{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+}
+
+p{
+    padding: 60px;
+    float: left;
+}
+.etelul{
+
+    max-width: 80%;
+    float: left;
+    list-style-type: none;
+    background-color: burlywood;
+    
+}
+.gasztr{
+    font-size: 1000%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+    
+}
+h6{
+    float: left;
+    font-size: x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.oso{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    padding-left: 2px;
+}
+.oso:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
+}
+.caprese{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.caprese:hover{ transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);}
+.alfredo{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.alfredo:hover{ transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);}
+.tiramisu{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 1% 2% rgba(0, 0, 0, 0.01);
+    transition: transform 0.1 ease, box-shadow 0.1 ease;
+}
+.tiramisu:hover{ transform: scale(1,1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);}
+.risotto{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.risotto:hover{ transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);}
+.lasagna{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.lasagna:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
+}
+.pasta{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.arancini{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 0 0  rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.panna{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+.pasta:hover{ transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);}
+
+.panna:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
+}
+.arancini:hover{ transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);}
+.kultul{
+    max-width: 70%;
+    float: left;
+    list-style-type: none;
+}
+h2{
+    text-align: center;
+}
+.kep{
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.01);
+    transition: transform 0.3 ease, box-shadow 0.3 ease;
+}
+
+.kep:hover{
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0);
+}
+.kep{
+    width: 500px;
+    height:250px;
+    margin: auto;
+    display: block;
+    padding-top:20px ;
+    text-align: center;
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.milano:hover{
+transform: translateY(-7px)
+}
+.porto:hover{
+    transform: translateY(-7px)
+}
+.velenc:hover{
+    transform: translateY(-7px)
+ }
+.Ro:hover{
+    transform: translateY(-7px)
+ }
+ .piz:hover{
+    transform: translateY(-7px)
+ }
+ .oso,.caprese,.alfredo,.tiramisu,.risotto,.lasagna,.pasta,.arancini,.panna:hover{
+    transform: translateY(-7px)
+ }
+
+
+.mona{
+    width: 30%;
+    height: 5%;
+    float: left;
+    padding-top: 60px;
+    
+}
+
+.mona:hover{
+    transform: translateY(-7px)
+}
+.jij{
+    font-size: 1000%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: oblique;
+    font-weight: bold;
+    text-align: center;
+}
